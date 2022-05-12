@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body{
+    /* background: #e0f7fa; */
+}
+
+#conteiner{
+    /* width: 88vh; */
+    height: 100vh;
+    margin: 0 auto;
+    /* background: yellow; */
+
+    display: flex;
+    flex-direction: column;
+}
+
+header{  
+    border: 1px solid blue;
+    flex: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    font-size: 3rem;
+}
+
+main{
+    background: peru;
+    flex: 15;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main section{
+    /*flex: 1;*/
+    height: 60%;
+    width: 40%;
+    padding: 10px;
+    border-radius: 4%;
+    box-shadow: 0 0 10px maroon;
+}
+
+#left{
+    background: blueviolet;
+}
+
+#right{
+    background: rgb(0, 255, 251);
+    display: flex;
+    flex-direction: column;
+    padding: 5px; 
+}
+
+#right h2{
+    text-align: center;
+    font-weight: 400;
+    font-size: 2rem;
+    height: 12%;
+    color: blue;
+    letter-spacing: 5px;
+}
+
+#itens{
+    /* background: red; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    flex: 1;
+}
+
+#itens table{
+    width: 100%;
+}
+
+#itens table td{
+    text-align: center;
+    padding: 5PX 0;
+    border-bottom: 1px solid white;
+}
+
+#itens table a{
+    text-decoration: none;
+    color: red;
+    font-weight: 700;
+}
+
+#itens table a:hover{
+    font-style: italic;
+}
+
+#acoes{
+    /* background: blue; */
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    height: 10%;
+    align-items: center;
+    /* width: 100%; */
+}
+
+#acoes button{
+    width: 10rem;
+    height: 80%;
+    border-radius: 5%;
+    background: pink;
+    font-size: 1rem;
+    border: none;
+    color: black;   
+}
+
+#acoes button:hover{
+    cursor: pointer;
+}
+
+
+footer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+

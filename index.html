@@ -4,21 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
-    <title>CSS-Flexbox</title>
+    <link rel="stylesheet" href="estilo-imc.css">
+    <script src="comportamento.js" defer></script>
+    <title>Calculo-IMC</title>
 </head>
 <body>
-    <div id="Lista">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div id ="item-3" class="item">3</div>
-        <div class="item">4</div>
-        <div class="item">5</div>
-        <div class="item">6</div>
-        <div class="item">7</div>
-        <div class="item">8</div>
-        <div class="item">9</div>
+    <div id="conteiner">
+        <header>
+            <h1>Calculadora IMC</h1>
+        </header>
+        <main>
+            <section id="left">
+                <div id="dados">
+                    <img src="imagem/feminino1.jpeg" alt="">
+                    <p>Patrícia Alessandra</p>
+                    <p>Feminino</p>
+                    <p id="show_imc">IMC --</p>
+                    <p>Sobrepeo</p>
+                </div>
+                <div id="formulario">
+                   <form action="#">
+                       <h2>Calcule seu IMC</h2>
+                       <div id="botoes_sexo">
+                           <button>M</button>
+                           <button>F</button>
+                       </div>
+                       <div class="input_controls">
+                           <label for="nome">Nome</label>
+                           <input id="nome" type="text">
+                       </div>
+                       <div class="input_controls">
+                           <label for="altura">Altura (m)</label>
+                           <input id="altura" type="number">
+                       </div>
+                       <div class="input_controls">
+                           <label for="peso">Peso (kg)</label>
+                           <input id="peso" type="text" >
+                       </div>
+                       <button id="btn_calcular">CALULADORA IMC</button>
+                       <button id="btn_limpar">LIMPAR</button>
+                   </form>
+                </div>
+            </section>
+            <section id="right">
+                <h2>Registros de Avaliações</h2>
+                <div  id="itens">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>NOME</th>
+                                <th>IMC</th>
+                                <th>CLASSIFICAÇÃO</th>
+                                <th>AÇÕES</th>   
+                            </tr>
+                        </thead>
+                       <tbody>
+                           <tr>
+                               <td>Patrícia</td>
+                               <td>36</td>
+                               <td>Peso normal</td>
+                               <td>
+                                   <a href="#">Remover</a>
+                               </td>
+                           </tr>
+                       </tbody>
+                       <tbody>
+                        <tr>
+                            <td>Patrícia</td>
+                            <td>36</td>
+                            <td>Peso normal</td>
+                            <td>
+                                <a href="#">Remover</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Patrícia</td>
+                                <td>36</td>
+                                <td>Peso normal</td>
+                                <td>
+                                    <a href="#">Remover</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Patrícia</td>
+                                <td>36</td>
+                                <td>Peso normal</td>
+                                <td>
+                                    <a href="#">Remover</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="itens"></div>
+                <div id="acoes">
+                    <button>Limpar</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Fim por fim feito por mim</p>
+            <p>Patrícia</p>
+        </footer>
     </div>
-    
 </body>
 </html>
